@@ -1,12 +1,12 @@
 {
-  "name": "browser-sync-jekyll",
+  "name": "follow-along-devtips-design-code",
   "version": "0.0.0",
-  "description": "A starter project including full setup for Jekyll, GulpJS, SASS & BrowserSync",
+  "description": "A new version of my website",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Shane Osbourne",
+  "author": "Rich Cordero",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.8.0",
@@ -19,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/shakyShane/jekyll-gulp-sass-browser-sync.git"
+    "url": "https://github.com/corderophilosophy/follow-along-devtips-design-code.git"
   },
   "keywords": [
     "jekyll",
@@ -27,8 +27,4 @@
     "sass",
     "browsersync"
   ],
-  "bugs": {
-    "url": "https://github.com/shakyShane/jekyll-gulp-sass-browser-sync/issues"
-  },
-  "homepage": "https://github.com/shakyShane/jekyll-gulp-sass-browser-sync"
 }
