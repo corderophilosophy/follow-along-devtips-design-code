@@ -1,14 +1,20 @@
+mixin nav-content()
+  ul
+    li: a(href="#about") About
+    li: a(href="#projects") Projects
+    li: a(href="#writing") Writing
+    li: a(href="#contact") Contact
+
+.mobile-nav
+  +nav-content()
+
 header
   .header-position
     h1.logo Rich Cordero
 
     nav.site-nav
-      ul
-        li: a(href="#about") About
-        li: a(href="#projects") Projects
-        li: a(href="#writing") Writing
-        li: a(href="#contact") Contact
-
-
+      +nav-content()
 
     a(href="mailto:rich@gmail.com").email-link +email me
+
+    .mobile-nav-toggle: span
