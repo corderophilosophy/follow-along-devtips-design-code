@@ -588,7 +588,7 @@ body {
 
 section.about {
   background-image: url(../img/about-bg.jpg);
-  background-position: center bottom;
+  background-position: center;
   background-size: cover; }
 
 .home-container {
