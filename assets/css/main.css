@@ -624,45 +624,61 @@ section.writing {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-align-content: space-around;
-        -ms-flex-line-pack: distribute;
-            align-content: space-around;
-    -webkit-justify-content: space-around;
-        -ms-flex-pack: distribute;
-            justify-content: space-around;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center; }
-    section.writing .writing-strip .row {
-      -webkit-flex-wrap: wrap;
-          -ms-flex-wrap: wrap;
-              flex-wrap: wrap; }
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
     section.writing .writing-strip .col {
       background: salmon;
       height: 100px;
-      margin: 12px;
+      margin: 12px 12px;
       width: 100px;
       border-radius: 50%;
       box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
       -webkit-transition: all 0.15s ease-in-out;
               transition: all 0.15s ease-in-out; }
       section.writing .writing-strip .col:hover {
-        box-shadow: 0 5px 14px rgba(0, 0, 0, 0.4); }
-
-@media (max-width: 640px) {
-  section.writing .writing-strip {
-    -webkit-box-orient: horizontal;
+        box-shadow: 0 5px 14px rgba(0, 0, 0, 0.4);
+        cursor: pointer; }
+  section.writing .col-1 {
+    position: relative;
+    height: 400px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: row;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    margin-top: 20px; } }
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    section.writing .col-1 p {
+      margin-top: -20px; }
+
+@media (max-width: 895px) {
+  section.writing .writing-strip .col {
+    height: 75px;
+    width: 75px; } }
+
+section.projects {
+  background: pink; }
+  section.projects .col-1.order-first {
+    margin-right: 100px; }
+  section.projects .home-cta {
+    font-size: 24px; }
+  section.projects .project-strip {
+    background: orange;
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    margin: -50px 0;
+    width: 100%;
+    height: calc(100% + 100px); }
+  section.projects .col-1 {
+    position: relative; }
 
 .home-container {
   display: -webkit-box;
