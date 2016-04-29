@@ -1,13 +1,14 @@
 section.writing
-  background: #02B875
+  background: $writing-bg
   color: white
 
   .home-cta
-    color: #02B875
+    color: $writing-bg
 
   .writing-strip
     display: flex
     flex-wrap: wrap
+    align-content: center
     .col
       background: salmon
       height: 100px
@@ -31,6 +32,10 @@ section.writing
 
 @media (max-width: 895px)
   section.writing
+    .home-cta
+      max-width: 300px
+    .col-1
+      height: 200px
     .writing-strip
       .col
         height: 75px
