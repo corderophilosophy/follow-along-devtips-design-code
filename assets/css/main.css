@@ -680,6 +680,11 @@ section.projects {
     width: 300px;
     background: white; }
 
+section.contact {
+  background: #3323a0; }
+  section.contact .contact-link {
+    padding: 100px; }
+
 .home-container {
   display: -webkit-box;
   display: -webkit-flex;
