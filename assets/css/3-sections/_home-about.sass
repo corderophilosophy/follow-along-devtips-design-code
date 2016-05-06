@@ -1,8 +1,5 @@
 section.about
-  background:
-    image: url(../img/about-bg.jpg)
-    position: center bottom
-    size: cover
+  background: $c-top
 
   h2
     color: $text-color
@@ -16,8 +13,22 @@ section.about
   .home-lead
     padding-bottom: 80px
 
+  .hero
+    background:
+      image: url(/assets/img/me.webp)
+      size: cover
+      repeat: no-repeat
+      position: center center
+    height: 300px
+    width: 50%
+    border-radius: 100%
+
+
 @media (max-width: 640px)
   section.about
     h2
       margin-left: auto
       margin-right: auto
+
+    .hero
+      display: none;

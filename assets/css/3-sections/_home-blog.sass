@@ -1,0 +1,62 @@
+section.blog
+  background: $blog-bg
+  color: white
+
+  .col-1
+    display: flex
+    align-items: center
+
+  .home-lead
+    color: white
+  .home-cta
+    color: $blog-bg
+    width: 300px
+    background: white
+
+  .post-wrap
+    display: flex
+    flex-wrap: wrap
+    flex-direction: row
+    flex-basis: 90px
+    margin: -50px 0
+
+  .post-thumb
+    display: block
+    background:
+      size: cover
+    width: 25%
+    position: relative
+    overflow: hidden
+
+    &:after
+      content: ''
+      display: block
+      padding-top: 100%
+
+    .post-meta
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      background: fade-out($blog-bg, 0.3)
+      color: white
+      padding: 10px
+      transform: translate(0%, 100%) scale(0.5)
+      transition: all 200ms ease-in-out
+      opacity: 0
+
+      .name
+        font-size: 16px
+
+      .date
+        font-size: 14px
+        font-style: italic
+
+  .post-thumb:hover .post-meta
+    opacity: 1
+    transform: translate(0%, 0%) scale(1)
+
+  @media (max-width: 640px)
+    .desc-wrap
+      margin-top: 100px

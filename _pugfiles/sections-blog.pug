@@ -1,0 +1,17 @@
+section.blog
+  .flex.flex--center
+
+    .col-50
+      .post-wrap
+      | {% for posts in site.posts %}
+      a(href="" style="background-image: url(assets/img/posts/thumbnails/post-1.jpg)").post-thumb
+        .post-meta
+          .name Post Name
+          .date July 2, 1983
+      | {% endfor %}
+
+    .col-50.flex.flex--center.order-first
+      .col-1
+        .desc-wrap
+          p.home-lead.outdented ...He also enjoys writing about his learning experiences, philosophy, sports...
+          a(href="").home-cta Visit Blog

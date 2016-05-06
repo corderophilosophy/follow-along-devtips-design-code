@@ -32,7 +32,7 @@ gulp.task('jekyll-rebuild', ['jekyll-build'], function () {
 /**
  * Wait for jekyll-build, then launch the Server
  */
-gulp.task('browser-sync', ['sass', 'jekyll-build'], function () {
+gulp.task('browser-sync', ['sass', 'jekyll-build', 'pug'], function () {
   browserSync({
     server: {
       baseDir: '_site'
@@ -76,8 +76,9 @@ gulp.task('pug', function () {
  */
 gulp.task('watch', function () {
   gulp.watch('assets/css/**', ['sass']);
+  gulp.watch('assets/js/**', ['jekyll-rebuild']);
+  gulp.watch(['*.html', '_posts/*', '_layouts/*.html', '_includes/*'], ['jekyll-rebuild']);
   gulp.watch('_pugfiles/*.pug', ['pug']);
-  gulp.watch(['*.html', '_layouts/*.html', '_includes/*', '_posts/*'], ['jekyll-rebuild']);
 });
 
 /**
