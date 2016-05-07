@@ -1,8 +1,49 @@
 .bloglayout
   flex: 1
-
-  @media (max-width: 830px)
-    margin-left: 15px
+  display: flex
+  flex-direction: row
+  justify-content: center
+  color: $text-color
 
   h1
-    color: blue
+    color: $text-color
+
+  .meta
+    font-size: .8em
+    line-height: 1
+    font-style: italic
+
+  .post-content
+    width: 70%
+    margin-right: auto
+    margin-left: 10px
+    line-height: 1.4
+
+  .sidebar
+    margin: 40px 20px 0 10px
+    padding-left: 20px
+    height: 460px
+    border: 3px solid rgba(100,100,100,0.5)
+    border-radius: 5px
+    width: 190px
+
+  .blog-title
+    font-size: 1.2em
+    margin-top: 25px
+    margin-left: 5px
+
+  .postlist
+    list-style: none
+    font-size: .8em
+    padding: 0
+    li
+      margin: 0 15px
+
+
+
+  // @media (max-width: 830px)
+  //   margin-left: 15px
+  //
+  // @media (min-width: 1075px)
+  //   .post-content
+  //     max-width: 950px

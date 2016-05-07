@@ -366,7 +366,7 @@ textarea {
   /* 2 */ }
 
 .gigantic, .huge, .large, .bigger, .big, h1, h2, h3, h4, h5, h6 {
-  color: #FF0040;
+  color: #036564;
   font-weight: bold; }
 
 .gigantic {
@@ -759,8 +759,21 @@ section.projects {
 
 section.contact {
   background: #CDB380; }
+  section.contact .col-2 {
+    height: 200px;
+    -webkit-align-self: center;
+        -ms-flex-item-align: center;
+            align-self: center;
+    margin-top: auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
   section.contact .contact-link {
-    padding: 100px; }
+    -webkit-align-self: center;
+        -ms-flex-item-align: center;
+            align-self: center;
+    text-decoration: none; }
 
 .home-container {
   display: -webkit-box;
@@ -842,9 +855,46 @@ section.contact {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
       -ms-flex: 1;
-          flex: 1; }
-  @media (max-width: 830px) {
-    .bloglayout {
-      margin-left: 15px; } }
+          flex: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #033648; }
   .bloglayout h1 {
-    color: blue; }
+    color: #033648; }
+  .bloglayout .meta {
+    font-size: .8em;
+    line-height: 1;
+    font-style: italic; }
+  .bloglayout .post-content {
+    width: 70%;
+    margin-right: auto;
+    margin-left: 10px;
+    line-height: 1.4; }
+  .bloglayout .sidebar {
+    margin: 40px 20px 0 10px;
+    padding-left: 20px;
+    height: 460px;
+    border: 3px solid rgba(100, 100, 100, 0.5);
+    border-radius: 5px;
+    width: 190px; }
+  .bloglayout .blog-title {
+    font-size: 1.2em;
+    margin-top: 25px;
+    margin-left: 5px; }
+  .bloglayout .postlist {
+    list-style: none;
+    font-size: .8em;
+    padding: 0; }
+    .bloglayout .postlist li {
+      margin: 0 15px; }
