@@ -48,6 +48,7 @@ section.blog
 
       .name
         font-size: 16px
+        line-height: 1.2
 
       .date
         font-size: 14px
@@ -57,6 +58,10 @@ section.blog
     opacity: 1
     transform: translate(0%, 0%) scale(1)
 
-  @media (max-width: 640px)
+  @media (max-width: 720px)
     .desc-wrap
       margin-top: 100px
+
+  @media (max-width: 999px) and (min-width: 720px)
+    .post-thumb
+      width: 33.3%
