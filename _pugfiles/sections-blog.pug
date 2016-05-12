@@ -1,17 +1,18 @@
-section.blog
+section.blog#blog
   .flex.flex--center
 
     .col-50
       .post-wrap
-      | {% for post in site.posts limit: 12 %}
-      a(href="{{post.url}}" style="background-image: url(assets/img/posts/thumbnails/{{post.thumbnail}})").post-thumb
-        .post-meta
-          .name {{post.title}}
-          .date {{post.date | date: "%a, %d %b, %Y"}}
-      | {% endfor %}
+        | {% for post in site.posts limit: 12 %}
+        a(href="{{post.url}}" style="background-image: url(assets/img/posts/thumbnails/{{post.thumbnail}})").post-thumb
+          .post-meta
+            //.name {{post.title}}
+            .date {{post.date | date: "%a, %d %b, %Y"}}
+            .excerpt {{ post.excerpt }}
+        | {% endfor %}
 
     .col-50.flex.flex--center.order-first
-      .col-1
+      .col-1.description
         .desc-wrap
-          p.home-lead.outdented ...He also enjoys writing about his learning experiences, philosophy, sports...
-          a(href="").home-cta Visit Blog
+          p.home-lead.outdented ...He also enjoys writing about what he's doing...
+          a(href="{{site.url}}/blog").home-cta Visit Blog

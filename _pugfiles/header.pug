@@ -1,9 +1,9 @@
 mixin nav-content()
   ul
-    li: a(href="#about") About
-    li: a(href="#blog") Blog
-    li: a(href="#projects") Projects
-    li: a(href="#contact") Contact
+    li: a(href="{{site.url}}/#about") About
+    li: a(href="{{site.url}}/blog") Blog
+    li: a(href="{{site.url}}/#projects") Projects
+    li: a(href="{{site.url}}/#contact") Contact
 
 .mobile-nav
   +nav-content()

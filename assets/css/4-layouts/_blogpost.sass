@@ -8,6 +8,9 @@
   h1
     color: $text-color
 
+  .banner
+    font-size: 1em
+
   .meta
     font-size: .8em
     line-height: 1
@@ -22,10 +25,9 @@
   .sidebar
     margin: 40px 20px 0 10px
     padding-left: 20px
-    height: 460px
-    border: 3px solid rgba(100,100,100,0.5)
+    border: 1px solid rgba(100,100,100,0.5)
     border-radius: 5px
-    width: 190px
+    height: 80vh
 
   .blog-title
     font-size: 1.2em
@@ -40,10 +42,17 @@
       margin: 0 15px
 
 
+@media (max-width: 700px)
+  .bloglayout
+    flex-direction: column-reverse
 
-  // @media (max-width: 830px)
-  //   margin-left: 15px
-  //
-  // @media (min-width: 1075px)
-  //   .post-content
-  //     max-width: 950px
+    .post-content
+      width: 90%
+      margin: auto
+
+    .sidebar
+      height: auto
+      margin-top: 10px
+
+    .postlist
+      display: flex
