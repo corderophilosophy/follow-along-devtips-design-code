@@ -1,3 +1,3 @@
-# Practice Project
+# Practice Project - the next ste:
 
-Following along with DevTips' Travis Nielson's "Design+Code: Build my personal site in 12 hours"
+Website redesign.
