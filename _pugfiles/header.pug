@@ -5,16 +5,12 @@ mixin nav-content()
     li: a(href="{{site.url}}/#projects") Projects
     li: a(href="{{site.url}}/#contact") Contact
 
-.mobile-nav
-  +nav-content()
-
 header
-  .header-position
-    h1.logo Rich Cordero
+  .header-container
+    .header-position
+      h1.logo Rich Cordero
 
-    nav.site-nav
-      +nav-content()
+      nav.site-nav
+        +nav-content()
 
-    a(href="mailto:rich@corderophilosophy.com").email-link +email me
-
-    .mobile-nav-toggle: span
+      a(href="mailto:rich@corderophilosophy.com").email-link +email me
