@@ -622,10 +622,7 @@ section.about {
     font-size: 40px;
     font-weight: 400;
     line-height: 1;
-    margin-left: -88px;
     margin-top: 0; }
-  section.about .home-lead {
-    padding-bottom: 80px; }
 
 @media (max-width: 640px) {
   section.about h2 {
@@ -670,6 +667,7 @@ section.blog {
     margin-bottom: -50px; }
   section.blog .post-thumb {
     display: block;
+    color: pink;
     background-size: cover;
     background-position: center;
     width: 25%;
@@ -956,28 +954,13 @@ section.projects {
 .col-50 {
   width: 50%; }
 
-.push-right {
-  margin-left: 330px; }
-
 @media (max-width: 640px) {
   .home-sections .flex {
     display: block; }
   .col-1 {
     max-width: 100%; }
   .col-50 {
-    width: auto; }
-  .push-right {
-    margin-left: 10px; } }
-
-.home-lead {
-  font-size: 22px;
-  line-height: 1.1;
-  color: #033648; }
-  .home-lead.outdented {
-    text-indent: -0.8em; }
-    @media (max-width: 640px) {
-      .home-lead.outdented {
-        text-indent: 0; } }
+    width: auto; } }
 
 .bloglayout {
   -webkit-box-flex: 1;
