@@ -1,9 +1,9 @@
 mixin nav-content()
   ul
-    li: a(href="{{site.url}}/#about") About
-    li: a(href="{{site.url}}/blog") Blog
-    li: a(href="{{site.url}}/#projects") Projects
-    li: a(href="{{site.url}}/#contact") Contact
+    li: a(href="{{site.url}}/#about").f3.link About
+    li: a(href="{{site.url}}/blog").f3.link Blog
+    li: a(href="{{site.url}}/#projects").f3.link Projects
+    li: a(href="{{site.url}}/#contact").f3.link Contact
 
 .mobile-nav
   +nav-content()
@@ -15,6 +15,6 @@ header
     nav.site-nav
       +nav-content()
 
-    a(href="mailto:rich@corderophilosophy.com").email-link +email me
+    a(href="mailto:rich@corderophilosophy.com").email-link.f3.link +email me
 
     .mobile-nav-toggle: span

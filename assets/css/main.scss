@@ -2,12 +2,16 @@
 @import "0-tools/bourbon/bourbon";
 @import "0-tools/normalize";
 
+@import "1-base/tachyons";
 @import "1-base/vars";
 @import "1-base/base";
 @import "1-base/buttons";
 
 
 @import "3-sections/header";
+@import "3-sections/title";
+
+@import "3-sections/footer";
 
 
 @import "4-layouts/home";
