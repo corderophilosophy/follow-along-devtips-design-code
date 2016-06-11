@@ -4946,6 +4946,18 @@ body {
   .title-content .tc.pv4.pv5-ns h2 {
     background: white; }
 
+.section-blog {
+  min-height: 300px;
+  background: #033649;
+  color: white; }
+
+.section-projects {
+  background: #036564;
+  min-height: 300px; }
+
+.contact-links {
+  background: #CDB380; }
+
 .home-container {
   display: -webkit-box;
   display: -webkit-flex;
