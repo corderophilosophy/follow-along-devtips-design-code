@@ -4955,10 +4955,13 @@ body {
   background: #036564;
   min-height: 300px; }
 
-.contact-links {
-  background: #CDB380; }
-  .contact-links .contact-tag {
+.section-footer {
+  background: #CDB380;
+  min-height: 300px; }
+  .section-footer .contact-tag {
     color: #033648; }
+  .section-footer .contact-bubble {
+    top: -5.25rem; }
 
 .home-container {
   display: -webkit-box;
