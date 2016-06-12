@@ -4957,6 +4957,8 @@ body {
 
 .contact-links {
   background: #CDB380; }
+  .contact-links .contact-tag {
+    color: #033648; }
 
 .home-container {
   display: -webkit-box;
