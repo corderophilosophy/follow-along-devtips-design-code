@@ -4956,12 +4956,19 @@ body {
   min-height: 300px; }
 
 .section-footer {
-  background: #CDB380;
-  min-height: 300px; }
+  background: #CDB380; }
   .section-footer .contact-tag {
     color: #033648; }
-  .section-footer .contact-bubble {
-    top: -5.25rem; }
+  .section-footer .twitter-bubble-child {
+    height: 91px;
+    width: 66.75px;
+    top: -1rem;
+    right: 4rem; }
+  .section-footer .email-bubble-child {
+    height: 91px;
+    width: 64px;
+    top: -1rem;
+    left: 4rem; }
 
 .home-container {
   display: -webkit-box;
