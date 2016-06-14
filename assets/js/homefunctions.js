@@ -1,3 +1,9 @@
+var animateCss = require('animate.css-js');
+var postThumbs = document.querySelectorAll('.post-thumb');
+
+module.exports = console.log(postThumbs);
+
+
 // function postJello() {
 //   var randNum = Math.round(Math.random() * $('.post-thumb')
 //     .length)

@@ -5,8 +5,9 @@
   .fl.w-100.w-75-ns.tc.pa3.pb4.right-col.pl5
     | {% for post in site.posts limit: 8 %}
     .fl.w-5.w-2-ns.mh2-ns
-      .mw5.center.bg-white.br3.pa1.pa2-ns.mv3.ba.b--black-10: .tc.post-meta
-        h1.f4.post-meta-title {{post.title}}
-        hr.bb.bw1.b--black-10.mb1
-        p.lh-solid.measure.center.f6.black-70.mb2.post-meta-excerpt {{post.excerpt | strip_html}}
+      .mw5.center.bg-white.br3.pa1.pa2-ns.mv3.ba.b--black-10.post-thumb
+        .tc.post-meta
+          h1.f4.post-meta-title {{post.title}}
+          hr.bb.bw1.b--black-10.mb1
+          p.lh-solid.measure.center.f6.black-70.mb2.post-meta-excerpt {{post.excerpt | strip_html}}
     | {% endfor %}
