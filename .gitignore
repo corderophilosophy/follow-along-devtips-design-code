@@ -1,3 +1,8 @@
+src/assets/bundle.js
+dist
+.sass-cache
+.jekyll-metadata
+
 # Created by https://www.gitignore.io/api/linux,jekyll,sass,node
 
 ### Linux ###

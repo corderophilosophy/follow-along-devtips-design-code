@@ -1,0 +1,1 @@
+!function(o){function e(r){if(l[r])return l[r].exports;var s=l[r]={exports:{},id:r,loaded:!1};return o[r].call(s.exports,s,s.exports,e),s.loaded=!0,s.exports}var l={};return e.m=o,e.c=l,e.p="",e(0)}([function(o,e){"use strict";console.log("Hello, world!"),console.log("Please?"),console.log("Seriously, please?")}]);
